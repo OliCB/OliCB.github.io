@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://olicb.github.io/frontendmentor/qr-code-component/](https://olicb.github.io/frontendmentor/qr-code-component/)
 
 ## My process
 
@@ -29,12 +29,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 
 ## Author
 
 Olivier Couture-Bienvenue
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@OliCB](https://www.frontendmentor.io/profile/OliCB)
 
