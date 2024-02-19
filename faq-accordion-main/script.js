@@ -1,10 +1,15 @@
 document.querySelectorAll('.row').forEach(r => {
     r.addEventListener('click', toggleRow);
+    r.setAttribute('tabindex', 0);
+    r.addEventListener('keydown', e => {
+        if (e.keyCode === 13) 
+            toggleRow(e);
+    });
 });
 
-function toggleRow() {
-    const rowBody = this.querySelector('.card__row-text-container');
-    const img = this.querySelector('img');
+function toggleRow(e) {
+    const rowBody = e.target.querySelector('.card__row-text-container');
+    const img = e.target.querySelector('img');
     const opened = rowBody.dataset.opened == "true";
 
     if (!opened) {

@@ -58,6 +58,7 @@ body {
 .card__header {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .card__title {
@@ -78,6 +79,11 @@ body {
 .card__row-header h2 {
     font-weight: 600;
     margin: 30px 0;
+    transition: color 75ms ease;
+}
+
+.card__row-header h2:hover {
+    color: var(--purple);
 }
 
 
@@ -110,4 +116,37 @@ body {
 
 .card__row-text--active {
     padding-bottom: 30px;
+}
+
+@media (width <= 800px) {
+    body {
+        background-image: url('assets/images/background-pattern-mobile.svg')
+    }
+
+    .card {
+        margin-top: 80px ;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .card__row-header {
+        font-size: 10px;
+    }
+
+    .card__row-header h2 {
+        margin: 20px 0;
+    }
+
+    .card__title {
+        font-size: 2.25rem;
+        margin: 10px;
+    }
+
+    .card__header > img {
+        height: 30px;
+    }
+
+    .card__header {
+        gap: 0;
+    }
 }
