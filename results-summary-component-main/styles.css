@@ -150,6 +150,21 @@ body, h1, h2, h3  {
     color: var(--light-red);
 }
 
+.results--yellow {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: var(--orangey-yellow);
+}
+
+.results--green {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: var(--green-teal);
+}
+
+.results--blue {
+    background-color: hsl(234, 85%, 45%, 0.05);
+    color: var(--cobalt-blue);
+}
+
 .results__button {
     background: linear-gradient(var(--gr-bg-1), var(--gr-bg-2));
     border: none;
