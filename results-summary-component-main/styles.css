@@ -90,7 +90,7 @@ body, h1, h2, h3  {
     align-items: center;
     background: linear-gradient(var(--gr-circle-1), var(--gr-circle-2));
     font-size: 60px;
-    margin: auto 0;
+    margin: 20px 0;
 }
 
 .results__total-score-of {
@@ -175,4 +175,31 @@ body, h1, h2, h3  {
     color: white;
     padding: 15px;
     cursor: pointer;
+}
+
+@media (width <= 600px) {
+    .results-container {
+        display: block;
+    }
+
+    .results {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .results__total {
+        border-radius: 0 0 10px 10px;
+        padding: 5%;
+    }
+
+    .results__summary {
+        padding: 5%;
+        flex: 1;
+    }
+
+    .results__total-score {
+        width: 150px;
+        height: 150px;
+        font-size: 45px;
+    }
 }
