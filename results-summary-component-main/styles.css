@@ -166,7 +166,7 @@ body, h1, h2, h3  {
 }
 
 .results__button {
-    background: linear-gradient(var(--gr-bg-1), var(--gr-bg-2));
+    background-color: var(--dark-gray-blue);
     border: none;
     border-radius: 30px;
     font-family: 'Hanken Grotesk';
@@ -175,6 +175,10 @@ body, h1, h2, h3  {
     color: white;
     padding: 15px;
     cursor: pointer;
+}
+
+.results__button:hover {
+    background: linear-gradient(var(--gr-bg-1), var(--gr-bg-2));
 }
 
 @media (width <= 600px) {
@@ -197,9 +201,13 @@ body, h1, h2, h3  {
         flex: 1;
     }
 
+    .results__total-header {
+        font-size: 15px;
+    }
+
     .results__total-score {
-        width: 150px;
-        height: 150px;
-        font-size: 45px;
+        width: 130px;
+        height: 130px;
+        font-size: 50px;
     }
 }
