@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', onInit);
 
 async function onInit() {
-    let scores = await fetch('data.json').then(data => data.json());
-    let rowContainer = document.querySelector('.results__summary-rows');
-    let colors = [
+    const scores = await fetch('data.json').then(data => data.json());
+    const rowContainer = document.querySelector('.results__summary-rows');
+    const colors = [
         'results--red', 
         'results--yellow', 
         'results--green', 
