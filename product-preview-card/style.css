@@ -46,6 +46,7 @@ body {
     grid-template-columns: 1fr 1fr;
     box-shadow: 0 0 20px 1px hsl(228, 12%, 48%, .1);
     max-width: 600px;
+    margin: 1rem;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -56,6 +57,25 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+}
+
+.image img {
+    display: none;
+}
+
+@media (width <= 600px) {
+    .product {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+    .image {
+        background-image: none;
+    }
+
+    .image img {
+        display: block;
+    }
 }
 
 .details {
