@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+    box-sizing: content-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --orange:  hsl(25, 97%, 53%);
+
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey-v: 216, 12%, 54%;
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    font-family: 'Overpass';
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    color: white;
+    display: grid;
+    place-content: center;
+    grid-template-rows: 1fr 2rem;
+    min-height: 100vh;
+}
+
+.step-container {
+    display: grid;
+    place-content: center;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background: linear-gradient(var(--dark-blue) -25%, var(--very-dark-blue) 125%);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.star  {
+    display: inline-flex;
+    padding: 1rem;
+    border-radius: 9999px;
+    background-color: hsla(var(--medium-grey-v), .1);
+}
+
+.text {
+    display: grid;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.description {
+    color: hsla(var(--medium-grey-v), 1);
+    margin: 0;
+}
+
+.ratings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.rating {
+    display: grid;
+    place-content: center;
+    background-color: hsla(var(--medium-grey-v), .1);
+    color: hsla(var(--medium-grey-v), 1);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 9999px;
+}
+
+.rating:hover {
+    color: white;
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--light-grey);
+    color: white;
+}
+
+.submit {
+    background-color: var(--orange);
+    text-transform: uppercase;
+    text-align: center;
+    padding: .6rem;
+    border-radius: 9999px;
+    letter-spacing: .1em;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+.thank-pic {
+    width: 50%;
+}
+
+.score-box {
+    color: var(--orange);
+    background-color: hsla(var(--medium-grey-v), .1);
+    border-radius: 9999px;
+    padding: .5rem 1.5rem;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
